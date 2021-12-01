@@ -7,6 +7,9 @@ const FooterWrapper = styled.footer`
   display: flex;
   justify-content: center;
   align-items: center;
+  @media ${(props) => props.theme.mobile} {
+    font-size: 14px;
+  }
 `;
 
 function Footer () {

@@ -31,6 +31,13 @@ const Project = styled.div`
   margin-bottom:20px;
   padding:25px;
   border-radius:10px;
+  @media ${(props) => props.theme.mobile} {
+    width:450px;
+    flex-direction:column-reverse;
+    justify-content:center;
+    align-items:center;
+    padding:15px;
+  }
 `;
 
 const ProjectContainer = styled.div`
@@ -52,6 +59,9 @@ const ProjectImg = styled.img`
   width:350px;
   height:200px;
   margin:0 50px;
+  @media ${(props) => props.theme.mobile} {
+    margin-bottom:10px;
+  }
 `;
 
 const ProjectTitle = styled.h3`
@@ -62,6 +72,9 @@ const ProjectTitle = styled.h3`
   font-size:30px;
   margin-bottom:5px;
   text-decoration:underline;
+  @media ${(props) => props.theme.mobile} {
+    font-size:25px;
+  }
 `;
 
 const ProjectCategory = styled.div`
@@ -71,6 +84,9 @@ const ProjectCategory = styled.div`
   font-weight:300;
   font-size:20px;
   margin-bottom:5px;
+  @media ${(props) => props.theme.mobile} {
+    font-size:15px;
+  }
 `;
 
 const ProjectStacks = styled.p`
@@ -78,12 +94,18 @@ const ProjectStacks = styled.p`
   font-family: "Avenir Next", Helvetica, sans-serif;
   font-weight:300;
   margin-top:5px;
+  @media ${(props) => props.theme.mobile} {
+    font-size:13px;
+  }
 `;
 
 const ProjectContents = styled.p`
   background:none;
   line-height:25px;
   font-family: 'Noto Sans KR';
+  @media ${(props) => props.theme.mobile} {
+    font-size:13px;
+  }
 `;
 
 const ProjectLink = styled.a`
@@ -91,6 +113,9 @@ const ProjectLink = styled.a`
    background:none;
    color:black;
    cursor: url(${pointer}), default;
+   :hover{
+    color:gray;
+    }
 `;
 
 function Projects () {

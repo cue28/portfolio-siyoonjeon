@@ -38,6 +38,10 @@ const Title = styled.h2`
       width:0%;
     }
   }
+  @media ${(props) => props.theme.mobile} {
+    font-size: 20px;
+    line-height:30px;
+  }
 `;
 
 function Home () {

@@ -11,6 +11,7 @@ export const GlobalStyle = createGlobalStyle`
       font-family: -apple-system,'Noto Sans KR', sans-serif;
       line-height: 1.5;
       cursor: url(${pointer}), default;
+      scroll-behavior: smooth;
       }
 `;
 

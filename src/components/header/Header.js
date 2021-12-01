@@ -20,11 +20,17 @@ const HeaderWrapper = styled.header`
   align-items:center;
   padding:0 20px;
   z-index:100;
+  @media ${(props) => props.theme.mobile} {
+    padding: 0 10px;
+  }
 `;
 
 const HeaderLogo = styled.h4`
   font-family: "Adobe Caslon Pro",Georgia,serif;
   font-weight:400;
+  @media ${(props) => props.theme.mobile} {
+    font-size: .8rem;
+  }
 `;
 
 const HeaderMenu = styled.ul`
@@ -32,9 +38,13 @@ const HeaderMenu = styled.ul`
 `;
 
 const HeaderItem = styled.li`
-   font-family: "Adobe Caslon Pro",Georgia,serif;
-   padding: 0 30px;
+  font-family: "Adobe Caslon Pro",Georgia,serif;
+  padding: 0 30px;
   list-style:none;
+  @media ${(props) => props.theme.mobile} {
+    font-size: .8rem;
+    padding: 0 10px;
+  }
 `;
 
 const HeaderItemLink = styled.a`

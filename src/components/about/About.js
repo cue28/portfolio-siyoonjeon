@@ -12,19 +12,31 @@ const AboutWrapper = styled.div`
   height: 90vh;
   flex-direction: column;
   margin: 0 115px;
+  @media ${(props) => props.theme.mobile} {
+    margin: 0 20px;
+  }
 `;
 
 const AboutTitle = styled.h1`
   font-size: 20px;
+  @media ${(props) => props.theme.mobile} {
+    font-size: 15px;
+  }
 `;
 
 const ProfileImg = styled.img`
   width: 200px;
   margin-bottom:10px;
+  @media ${(props) => props.theme.mobile} {
+    width: 150px;
+  }
 `;
 
 const Introduce = styled.p`
   margin-bottom: 20px;
+  @media ${(props) => props.theme.mobile} {
+    font-size: 13px;
+  }
 `;
 
 const RowContainer = styled.div`
@@ -43,6 +55,9 @@ const Skill = styled.span`
   margin-right: 10px;
   font-size: 17px;
   font-weight: 400;
+  @media ${(props) => props.theme.mobile} {
+    font-size: 14px;
+  }
 `;
 
 const EducationContainer = styled.div`
@@ -56,6 +71,9 @@ const Education = styled.span`
   margin-right: 10px;
   font-size: 17px;
   font-weight: 400;
+  @media ${(props) => props.theme.mobile} {
+    font-size: 14px;
+  }
 `;
 
 const ExperiencesContainer = styled.div`
@@ -67,6 +85,9 @@ const Experiences = styled.span`
   margin-right: 10px;
   font-size: 17px;
   font-weight: 400;
+  @media ${(props) => props.theme.mobile} {
+    font-size: 14px;
+  }
 `;
 
 const Link = styled.a`
@@ -77,6 +98,12 @@ const Link = styled.a`
   color: black;
   margin-right:10px;
   cursor: url(${pointer}), default;
+  :hover{
+    color:gray;
+  }
+  @media ${(props) => props.theme.mobile} {
+    font-size: 20px;
+  }
 `;
 
 function About () {
